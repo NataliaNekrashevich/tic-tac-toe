@@ -34,7 +34,7 @@ class TicTacToe {
                 this.playField[0][2] === this.playField[1][1] && this.playField[0][2] === this.playField[2][0] && this.playField[0][2] !== null  ) {
                 this.winner = this.currentSymbol;
                 }   
-              this.currentSymbol = (this.currentSymbol == 'x') ? '0' : 'x'; 
+              this.currentSymbol = (this.currentSymbol == 'x') ? 'o' : 'x'; 
     }
 
 
@@ -48,7 +48,7 @@ class TicTacToe {
     }
 
     getWinner() {
-    	if(this.winner != null) {
+    	if(this.winner !== null) {
             return this.winner;
         } 
         else{
